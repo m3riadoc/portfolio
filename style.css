@@ -4,14 +4,24 @@
 }
 
 body {
-  min-height: 100vh;
+
   font-family: 'Figtree', sans-serif;
+background: linear-gradient(45deg, rgb(194, 227, 233), #ced0d1,#778cc9,#2282a0);
+animation: color 12s ease-in-out infinite;
+background-size: 300%, 300%;
+  
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 50% 50%;
 
-
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    }
+    100%{
+        background-position: 100% 50% ;
+    }
 }
 
 nav {
@@ -129,11 +139,25 @@ label:active:after{
 }
 
 .dark-mode{
-   background-image: url(/images/—Pngtree—modern\ simple\ elegant\ dark\ blue_1454711.png);
+    background: linear-gradient(-45deg, rgb(1, 12, 14), #190996,#2f0135,rgb(62, 21, 100));
+    animation: color 12s ease-in-out infinite;
    background-position: center;
+   background-size: 300%, 300%;
    color: white;
+   
 }
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
 
+    }
+    100%{
+        background-position: 0% 50% ;
+    }
+}
 /*END OF DARK MODE BUTTON */
 
 
