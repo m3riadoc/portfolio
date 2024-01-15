@@ -292,7 +292,7 @@ label:active:after {
 /*SWIPER */
 
 .swiper {
-  width: auto;
+  width: 60%;
   height: 250px;
   display: flex;
   justify-content: center;
