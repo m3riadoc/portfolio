@@ -12,28 +12,28 @@
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <nav>
         <ul class="sidebar">
           <li  onclick=hideSidebar()><a href=""  class="close-button">
             <svg xmlns="http://www.w3.org/2000/svg"   height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-          <li><a href="" class="underline">Home</a></li>
+          <li><a href="#home" class="underline">Home</a></li>
           <li><a href="#aboutMe" class="underline">About</a></li>
-          <li><a href="" class="underline">Projects</a></li>
-          <li><a href="" class="underline">Contact</a></li>
+          <li><a href="#portfolio" class="underline">Portfolio</a></li>
+          <li><a href="#contact" class="underline">Contact</a></li>
         </ul>
         <ul>
           <li><a href="" >Bartosz</a></li>
           <li>
             <a>
-            <input type="checkbox" id="darkmode-toggle">
+            <input class="checkbox-input" type="checkbox" id="darkmode-toggle">
             <label for="darkmode-toggle"></label>
           </a>
           </li>
-          <li  class="hideOnMobile"><a href="" class="underline">Home</a></li>
+          <li  class="hideOnMobile"><a href="#home" class="underline">Home</a></li>
           <li  class="hideOnMobile"><a href="#aboutMe" class="underline">About</a></li>
-          <li  class="hideOnMobile"><a href="" class="underline">Projects</a></li>
-          <li  class="hideOnMobile"><a href="" class="underline">Contact</a></li>
+          <li  class="hideOnMobile"><a href="#portfolio" class="underline">Portfolio</a></li>
+          <li  class="hideOnMobile"><a href="#contact" class="underline">Contact</a></li>
           <li  class="hideOnDesktop" onclick=showSidebar()><a href="" class="close-button"><svg xmlns="http://www.w3.org/2000/svg"   height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
         </ul>
       </nav>
@@ -45,8 +45,8 @@
         <p>Hello, I'm <br> <span class="highlight">Bartosz </span><br>Junior front-end developer</p>
       </div>
       <div>
-     <button>CONTACT ME</button>
-     <button>VIEW MY CV</button>
+    <button> <a href="#contact">CONTACT ME</a></button>
+    
     </div>
     </section>
 
@@ -58,13 +58,16 @@
       <div class="section2-text-container">
         <p>As a young, self-taught front-end developer, I am deeply committed to crafting clear and functional websites. Passionate about learning and innovation, I strive to make the web more accessible and enjoyable for everyone </p>
       </div>
+      <a href="/files/Bartosz Kozielski CV 2023 eng.pdf" target="_blank">
+      <button>VIEW MY CV</button>
+      </a>
     </section>
 
 
     <section class="section3">
             <h2>MY SKILLS</h2>
 
-     <div class="swiper mySwiper">
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="/images/html.png" alt=""></div>
       <div class="swiper-slide"><img src="/images/css.png" alt=""></div>
@@ -77,20 +80,41 @@
     </div>
     
   </div>
- </section>
+</section>
 
 
-<section class="section4">
+<section id="portfolio" class="section4">
 
-<p>MY PORTFOLIO</p>
+<h2>PORTFOLIO</h2>
+
+<div><img width="300" height="400" src="/images/Zrzut ekranu 2024-01-16 120709.png" alt=""></div>
+<div><img width="300" height="400" src="/images/Zrzut ekranu 2024-01-16 121032.png" alt=""></div>
+<div></div>
+<div></div>
 
 
+</section>
+
+<section  id="contact" class="section5">
+  <a class="arrowUp" href="#home">
+  <img   width="30" height="30" src="/images/up-arrow-svgrepo-com.svg" alt="">
+  </a>
+  <div class="container">
+  <form>
+    <h2>GET IN TOUCH</h2>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <input type="text" id="name" placeholder="Phone no." required>
+    <textarea  id="message" rows="4" placeholder=""></textarea>
+    <button type="submit"> Send message</button>
+  </form>
+  </div>
 </section>
 
 
 
 
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="sidebar.js"></script>
     <script src="darkmode.js"></script>
