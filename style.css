@@ -9,10 +9,9 @@ body {
   font-family: "Figtree", sans-serif;
   background: linear-gradient(
     45deg,
-    rgb(182, 85, 46),
-    #bc5cc9,
-    #2448bd,
-    #116079
+    #fcddd9,
+    #ffffff
+
   );
   animation: color 12s ease-in-out infinite;
   background-size: 300%, 300%;
@@ -36,7 +35,7 @@ nav {
   list-style-type: none;
   background-color: transparent;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -55,7 +54,7 @@ nav li {
 
 .underline:before {
   content: "";
-  background-color: pink;
+  background-color: rgb(247, 149, 226);
   position: absolute;
   left: 0;
   bottom: 0;
@@ -79,7 +78,7 @@ nav a {
 }
 
 nav a:hover{
-  color:rgb(184, 33, 163);
+  color:rgb(224, 86, 206);
 }
 
 nav li:first-child {
@@ -134,7 +133,7 @@ label {
   height: 20px;
   position: relative;
   display: block;
-  background: #c0beb2;
+  background: rgb(240, 225, 141);
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
@@ -148,9 +147,10 @@ label:after {
   position: absolute;
   top: 3px;
   left: 3px;
-  background: linear-gradient(180deg, #89fff9, #d8860b);
+  background: linear-gradient(180deg, #fcddd9,
+    #ffffff);
   border-radius: 180px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2),;
   transition: 0.3s;
 }
 .checkbox-input {
@@ -230,15 +230,37 @@ label:active:after {
 }
 
 .section1 button {
-  width: 100px;
-  height: 35px;
-  border-radius: 5px;
+  height: 45px;
+  width: 150px;
+  position: relative;
+  border-style: none;
+  text-decoration: none;
   cursor: pointer;
+  background: linear-gradient(270deg,#dc94e2,#fdd497);
+  color: white;
+}
+.section1 button::after {
+  content: '';
+  position: absolute;
+  top: 100%;  /* Umieszcza pseudo-element bezpośrednio pod przyciskiem */
+  left: 0;
+  width: 100%;
+  height: 10px; /* Wysokość cienia */
+  background: linear-gradient(to left, #dc94e2, #fdd497);
+  filter: blur(10px); /* Nadaje rozmycie, tworząc efekt cienia */
+  z-index: -1; /* Upewnia się, że cień jest pod przyciskiem */
+}
+
+
+
+.section1 a{
+  text-decoration: none;
+  color: white;
 }
 
 .highlight {
   font-size: 45px;
-  color: #0f4e61;
+  color: #a842b6;
 }
 
 .section2 {
@@ -302,7 +324,7 @@ label:active:after {
 }
 
 .section4 img{
-  border: 2px solid black;
+ 
 }
 
 
@@ -323,10 +345,10 @@ label:active:after {
 
 
 .container{
-  background-color: beige;
   width: 90%;
   height: 40vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   
@@ -334,7 +356,7 @@ label:active:after {
 
 
 form{
-  background-color: red;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -348,6 +370,10 @@ form h2{
   justify-content: center;
 }
 
+
+footer{
+  height: 5vh;
+}
 
 
 
