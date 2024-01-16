@@ -102,12 +102,20 @@
   <h2>GET IN TOUCH</h2>
   <div class="container">
     
-  <form>
-    <input class="input-name" type="text" id="name" placeholder="Your Name" required>
-    <input class=" input-email" type="email" id="email" placeholder="Your Email" required>
-    <input class="input-phone" type="text" id="name" placeholder="Phone Number" required>
-    <textarea class="form-text" id="message" rows="4" placeholder="Message"></textarea>
+  <form method="POST" id="form">
+     <input type="hidden" name="access_key" value="584cee80-0cdc-49ab-98f8-d94d59b2c9f5">
+    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+    <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+    <input class="input-name" type="text" id="name" name="name" placeholder="Your Name" required>
+<input class="input-email" type="email" id="email" name="email" placeholder="Your Email" required>
+<input class="input-phone" type="text" id="phone" name="phone" placeholder="Phone Number" required>
+<textarea class="form-text" id="message" name="message" rows="4" maxlength="150" placeholder="Message"></textarea>
+<div id="message-info"></div>
+
+
     <button class="form-button" type="submit"> <p>Submit</p> <img  width="30" height="40" src="/images/reshot-icon-right-arrow-UCA8NGYZDJ.svg" alt=""></button>
+    <div id="result"></div>
   </form>
   </div>
 </section>
@@ -125,12 +133,13 @@
 
 
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="arrow.js"></script>
     <script src="sidebar.js"></script>
     <script src="darkmode.js"></script>
     <script src="swiper.js"></script>
-  </body>
+    <script src="submit.js"></script>
+    <script src="alert.js"></script>
+  </body> 
 </html>

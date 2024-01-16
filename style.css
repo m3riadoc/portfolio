@@ -383,13 +383,11 @@ label:active:after {
   justify-content: center;
 }
 
-.section4 img{
- 
-}
+
 
 
 .section5{
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -415,7 +413,7 @@ label:active:after {
 
 .container{
   width: 90%;
-  height: 40vh;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -478,6 +476,14 @@ form{
   border-style: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
   padding-top: 10px;
+}
+
+#message-info {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
 }
 
 .input-name, .input-email, .input-phone, .form-text {
@@ -581,7 +587,7 @@ textarea:focus::placeholder{
 footer{
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  min-height: 30vh;
 }
 
 footer p{
