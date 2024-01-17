@@ -168,14 +168,7 @@
     </section>
 
     <section id="contact" class="section5">
-      <a class="arrowUp" href="#home">
-        <img
-          width="30"
-          height="30"
-          src="images/up-arrow-svgrepo-com.svg"
-          alt=""
-        />
-      </a>
+    
       <h2>GET IN TOUCH</h2>
       <div class="container">
         <form method="POST" id="form">
@@ -195,6 +188,7 @@
             class="input-name"
             type="text"
             id="name"
+            maxlength="30"
             name="name"
             placeholder="Your Name"
             required
@@ -202,6 +196,7 @@
           <input
             class="input-email"
             type="email"
+            maxlength="30"
             id="email"
             name="email"
             placeholder="Your Email"
@@ -211,6 +206,7 @@
             class="input-phone"
             type="text"
             id="phone"
+            maxlength="15"
             name="phone"
             placeholder="Phone Number"
             required
@@ -220,7 +216,7 @@
             id="message"
             name="message"
             rows="4"
-            maxlength="150"
+            maxlength="250"
             placeholder="Message"
           ></textarea>
           <div id="message-info"></div>
@@ -240,12 +236,19 @@
     </section>
 
     <footer>
-      <p>hi</p>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div class="footer-icons">
+        <img  width="30" src="images/linkedinfooter.png" alt="" />
+        <img  width="30" src="images/githubfooter.png" alt="" />
+        <img width="30"  src="images/facebookfooter.png" alt="" />
       </div>
+         <a class="arrowUp" href="#home">
+        <img class="arrowUp"
+          width="30"
+          height="30"
+          src="images/arrowup.png"
+          alt=""
+        />
+      </a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -256,5 +259,6 @@
     <script src="swiper.js"></script>
     <script src="submit.js"></script>
     <script src="alert.js"></script>
+    <script src="arrowUp.js"></script>
   </body>
 </html>

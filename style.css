@@ -297,7 +297,9 @@ label:active:after {
 }
 
 .section2 h2{
-  font-size: 30px;
+  font-size: 35px;
+  color: #a842b6;
+  padding-bottom: 50px;
 }
 
 
@@ -354,9 +356,7 @@ label:active:after {
   justify-content: center;
 }
 
-#aboutMe{
-  color: #a842b6;
-}
+
 
 .section2-text-container {
   width: 300px;
@@ -374,9 +374,9 @@ label:active:after {
 }
 
 .section3 h2{
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   padding-top: 50px;
-  font-size: 30px;
+  font-size: 35px;
   
   
 }
@@ -402,7 +402,7 @@ label:active:after {
 
 
 .section5{
-  min-height: 40vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -421,7 +421,9 @@ label:active:after {
 
 .section5 h2{
   padding-top: 20px;
-  font-size: 30px;
+  padding-bottom: 130px;
+  font-size: 35px;
+  color: #a842b6;
 }
 
 
@@ -438,7 +440,7 @@ label:active:after {
 
 
 form{
-  gap: 20px;
+  gap: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -448,7 +450,7 @@ form{
 
 
 .input-name{
-  height: 40px;
+  height: 50px;
   border-radius: 20px;
   border-style: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
@@ -461,7 +463,7 @@ form{
 }
 
 .input-email{
-  height: 40px;
+  height: 50px;
   border-radius: 20px;
   border-style: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
@@ -472,7 +474,7 @@ form{
 }
 
 .input-phone{
-  height: 40px;
+  height: 50px;
   border-radius: 20px;
   border-style: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
@@ -484,7 +486,7 @@ form{
 
 
 .form-text{
-  height: 90px;
+  height: 120px;
   border-radius: 20px;
   border-style: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
@@ -505,7 +507,7 @@ form{
   padding-left: 20px; 
   font-family: "Figtree", sans-serif; 
   font-weight: 300;
-  width: 250px;
+  width: 300px;
   max-width: 300px;
 }
 
@@ -599,20 +601,31 @@ textarea:focus::placeholder{
 
 
 
-footer{
+footer {
   display: flex;
-  flex-direction: column;
-  min-height: 5vh;
-  background-color: white;
-}
-
-footer p{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+  position: relative;
+  width: 100%;
 }
 
+footer div {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrowUp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: 1; /* początkowo niewidoczna */
+  transition: opacity 0.5s ease; /* płynne przejście */
+}
 
 
 
