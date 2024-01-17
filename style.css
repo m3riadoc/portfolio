@@ -9,8 +9,8 @@ body {
   font-family: "Figtree", sans-serif;
   background: linear-gradient(
     45deg,
-    #fcddd9,
-    #ffffff
+    rgb(252, 221, 217),
+    rgb(255, 255, 255)
 
   );
   animation: color 12s ease-in-out infinite;
@@ -135,7 +135,7 @@ nav li:first-child {
   transition: width 0.3 ease;
 }
 
-/*DARK MODE ICON */
+/* DARK MODE ICON */
 label {
   width: 40px;
   height: 20px;
@@ -213,6 +213,9 @@ label:active:after {
 }
 /*END OF DARK MODE BUTTON */
 
+
+/* SECTION1 */
+
 .section1 {
   margin-left: auto;
   margin-right: auto;
@@ -286,7 +289,10 @@ label:active:after {
   color: white;
 }
 
+/* END OF SECTION1 */
 
+
+/* SECTION2 */
 
 .section2 {
   min-height: 60vh;
@@ -366,6 +372,14 @@ label:active:after {
   height: 200px;
 }
 
+
+/*  END OF SECTION2  */
+
+
+
+/* SECTION3 */
+
+
 .section3 {
   padding-top:40px;
   min-height: 25vh;
@@ -376,62 +390,162 @@ label:active:after {
   align-items: center;
 }
 
+
 .section3 h2{
   padding-bottom: 50px;
   padding-top: 50px;
   font-size: 35px;
   
-  
 }
+
+/* END OF SECTION3 */
+
+/* SECTION4 */
 
 .section4 {
+  padding-top: 50px;
   min-height: 100vh;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section4-images {
+  padding-top: 30px;
 }
 
 
-.section4 h2{
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.section4 div{
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
 .img-container {
-  position: relative;
-  display: inline-block;
-  width: 300px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Cień dodający głębię */
+    transition: box-shadow 0.3s ease;
 }
 
-.img-overlay {
-  position: absolute;
-  width: 300px; /* Szerokość overlay będzie tak duża, jak szerokość obrazka */
-  height: 100%; /* Wysokość overlay będzie tak duża, jak wysokość obrazka */
-  background-color: rgba(0, 0, 0, 0.7); /* Kolor tła overlay (tu: ciemniejszy) */
-  color: white; /* Kolor tekstu na overlay */
-  text-align: center;
-  opacity: 0; /* Początkowo ukryj overlay */
-  transition: opacity 0.3s ease; /* Animacja pojawiania się overlay */
+.img-container img {
+    display: block;
+    width: 100%;
+
 }
 
-.img-container:hover .img-overlay {
-  opacity: 1; /* Po najechaniu na kontener obrazka pokaż overlay */
+.img-container .overlay-top,
+.img-container .overlay-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+     background: linear-gradient(
+    45deg,
+    rgb(252, 221, 217, 0.5),
+    rgb(255, 255, 255,0.5)
+
+  );
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
 }
 
 
 
+.img-container .overlay-top {
+    top: 0;
+    bottom: 50%;
+    transform: scaleY(0);
+    transform-origin: top;
+}
 
+.img-container .overlay-bottom {
+    bottom: 0;
+    top: 50%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+
+.img-container:hover .overlay-top,
+.img-container:hover .overlay-bottom {
+    transform: scaleY(1);
+}
+
+
+.img-container .overlay-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 10px; 
+}
+
+.overlay-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+  margin: 0 5px; 
+  padding: 5px 10px; 
+  background: linear-gradient(270deg, #dc94e2, #fdd497); 
+   color: white;
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
+   font-weight: 790;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 120px;
+}
+
+
+.overlay-button:hover {
+   box-shadow: 0px 8px 15px rgba(119, 17, 128, 0.5); 
+}
+
+.overlay-button::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(270deg, #7db9e8, #731180); /* Gradient po najechaniu */
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+   z-index: -1;
+}
+
+.overlay-button:hover::after {
+   opacity: 1;
+}
+
+
+
+.img-container:hover .overlay-button {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.img-container .overlay-button {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.section4-button-img{
+  width: 20px !important;
+  height: 20px !important;
+   filter: invert(100%);
+}
+
+
+/* END OF SECTION4 */
+
+
+/* SECTION5 */
 
 .section5{
   min-height: 100vh;
@@ -636,7 +750,7 @@ textarea:focus::placeholder{
 }
 
 
-
+/*  END OF SECTION5 */
 
 
 footer {
