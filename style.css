@@ -169,7 +169,7 @@ label:after {
 }
 
 .sun{
-  filter: brightness(0) saturate(100%) invert(91%) sepia(57%) saturate(7435%) hue-rotate(336deg) brightness(97%) contrast(87%);
+  
   position: absolute;
   z-index: 100;
   left: 5px;
@@ -267,6 +267,7 @@ filter: invert(100%);
  filter: invert(100%);
 }
 .dark-mode .sun{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
 
