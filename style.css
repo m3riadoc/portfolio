@@ -144,7 +144,7 @@ label {
   background: rgb(230, 103, 235);
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(2, 1, 1, 0.4),
-    inset 0px -5px 15px rgba(99, 11, 62, 0.4);
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -167,25 +167,19 @@ label:after {
   visibility: hidden;
 }
 .checkbox-input:checked + label {
-  background: #282a2e;
+  
 }
 .checkbox-input:checked + label:after {
   left: 37px;
   transform: translateX(-100%);
-  background: linear-gradient(180deg, #352c2c, #efe3f0);
+  background: linear-gradient( #352c2c, #000000);
 }
 label:active:after {
   width: 10px;
 }
 
 .dark-mode {
-  background: linear-gradient(
-    -45deg,
-    rgb(1, 12, 14),
-    #242425,
-    #413d3d,
-    rgb(63, 5, 55)
-  );
+  background: #121212;
   animation: color 12s ease-in-out infinite;
   background-position: center;
   background-size: 300%, 300%;
@@ -213,12 +207,43 @@ label:active:after {
 }
 
 .dark-mode .section2-text-container{
-  color: black;
+  color: white;
 }
 
 .dark-mode .footer-icons{
 filter: invert(100%);
 }
+.dark-mode header{
+  background-color: #1f1f1f;
+}
+
+.dark-mode .section2{
+  background-color: #1f1f1f ;
+}
+
+.dark-mode .section4{
+  background-color: #1f1f1f ;
+}
+
+.dark-mode .swiper-slide img{
+  filter: invert(100%);
+}
+
+.dark-mode .form-button img{
+  filter: invert(0%);
+}
+.dark-mode .form-button {
+  color: black;
+}
+
+.dark-mode .triangle{
+  filter: invert(100%);
+}
+
+.dark-mode .arrowUp{
+  filter: brightness(0) saturate(100%) invert(61%) sepia(37%) saturate(7498%) hue-rotate(255deg) brightness(72%) contrast(98%);
+}
+
 
 @keyframes color {
   0% {
@@ -439,6 +464,7 @@ filter: invert(100%);
 
 .section4 h2{
   font-size: 35px;
+  color: #a842b6;
 }
 
 
