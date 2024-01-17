@@ -5,141 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header id="home">
       <nav>
         <ul class="sidebar">
-          <li  onclick=hideSidebar()><a href=""  class="close-button">
-            <svg xmlns="http://www.w3.org/2000/svg"   height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li onclick="hideSidebar()">
+            <a href="" class="close-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg
+            ></a>
+          </li>
           <li><a href="#home" class="underline">Home</a></li>
           <li><a href="#aboutMe" class="underline">About</a></li>
           <li><a href="#portfolio" class="underline">Portfolio</a></li>
           <li><a href="#contact" class="underline">Contact</a></li>
         </ul>
         <ul>
-          <li><a href="" >Bartosz</a></li> 
+          <li>
+            <a href="index.html"
+              ><img width="35" src="/images/pngwing.com (2).png" alt=""
+            /></a>
+          </li>
           <li>
             <a>
-            <input class="checkbox-input" type="checkbox" id="darkmode-toggle">
-            <label for="darkmode-toggle"></label>
-          </a>
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                id="darkmode-toggle"
+              />
+              <label for="darkmode-toggle"></label>
+            </a>
           </li>
-          <li  class="hideOnMobile"><a href="#home" class="underline">Home</a></li>
-          <li  class="hideOnMobile"><a href="#aboutMe" class="underline">About</a></li>
-          <li  class="hideOnMobile"><a href="#portfolio" class="underline">Portfolio</a></li>
-          <li  class="hideOnMobile"><a href="#contact" class="underline">Contact</a></li>
-          <li  class="hideOnDesktop" onclick=showSidebar()><a href="" class="close-button"><svg xmlns="http://www.w3.org/2000/svg"   height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+          <li class="hideOnMobile">
+            <a href="#home" class="underline">Home</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="#aboutMe" class="underline">About</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="#portfolio" class="underline">Portfolio</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="#contact" class="underline">Contact</a>
+          </li>
+          <li class="hideOnDesktop" onclick="showSidebar()">
+            <a href="" class="close-button"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40"
+                viewBox="0 -960 960 960"
+                width="30"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg
+            ></a>
+          </li>
         </ul>
       </nav>
     </header>
 
-
     <section class="section1">
       <div>
-        <p>Hello, I'm <br> <span class="highlight">Bartosz </span><br>Junior front-end developer</p>
+        <p>
+          Hello, I'm <br />
+          <span class="highlight">Bartosz </span><br />Junior Front-End
+          Developer
+        </p>
       </div>
       <div>
-    <button> <a href="#contact">CONTACT ME</a></button>
-    
-    </div>
+        <button><a href="#contact">CONTACT ME</a></button>
+      </div>
     </section>
 
-
-
-
     <section class="section2">
-      <h2 id="aboutMe">ABOUT ME</h2>
+      <h2 id="aboutMe">
+        <img width="10" src="/images/right-bottom-triangle (1).svg" alt="" />
+        ABOUT ME <img width="10" src="/images/right-triangle-3.svg" alt="" />
+      </h2>
       <div class="section2-text-container">
-        <p>As a young, self-taught front-end developer, I am deeply committed to crafting clear and functional websites. Passionate about learning and innovation, I strive to make the web more accessible and enjoyable for everyone </p>
+        <p>
+          As a young, self-taught front-end developer, I am deeply committed to
+          crafting clear and functional websites. Passionate about learning and
+          innovation, I strive to make the web more accessible and enjoyable for
+          everyone.
+        </p>
       </div>
       <a href="/files/Bartosz Kozielski CV 2023 eng.pdf" target="_blank">
-      <button>VIEW MY CV</button>
+        <button>VIEW MY CV</button>
       </a>
     </section>
 
-
     <section class="section3">
-            <h2>MY SKILLS</h2>
+      <h2>
+        <img width="10" src="/images/right-bottom-triangle (1).svg" alt="" /> MY
+        SKILLS <img width="10" src="/images/right-triangle-3.svg" alt="" />
+      </h2>
 
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/html.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/css.png" alt=""></div>
-      <div class="swiper-slide"><img  src="images/javascript.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/node-js.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/react.png" alt=""></div>
-      <div class="swiper-slide"><img src="images/figma.png"></div>
-      <div class="swiper-slide"><img src="images/github.png" alt=""></div>
-      
-    </div>
-    
-  </div>
-</section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/html128.png" alt="" />
+            <p>HTML</p>
+          </div>
+          <div class="swiper-slide"><img  src="images/css128.png" alt="" />
+          <p>CSS</p></div>
+          <div class="swiper-slide">
+            <img src="images/js128.png" alt="" />
+            <p>JavaScript</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/node128.png" alt="" />
+            <p>Node.js</p>
+          </div>
+          <div class="swiper-slide"><img src="images/react128.png" alt="" />
+          <p>React</p></div>
+          <div class="swiper-slide"><img src="images/figma128.png" /><p>Figma</p></div>
+          <div class="swiper-slide"><img src="images/github128.png" alt="" /><p>GitHub</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section id="portfolio" class="section4">
+      <h2>PORTFOLIO</h2>
 
-<section id="portfolio" class="section4">
+      <div>
+        <img
+          width="300"
+          height="400"
+          src="images/Zrzut ekranu 2024-01-16 120709.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          width="300"
+          height="400"
+          src="images/Zrzut ekranu 2024-01-16 121032.png"
+          alt=""
+        />
+      </div>
+      <div></div>
+      <div></div>
+    </section>
 
-<h2>PORTFOLIO</h2>
+    <section id="contact" class="section5">
+      <a class="arrowUp" href="#home">
+        <img
+          width="30"
+          height="30"
+          src="images/up-arrow-svgrepo-com.svg"
+          alt=""
+        />
+      </a>
+      <h2>GET IN TOUCH</h2>
+      <div class="container">
+        <form method="POST" id="form">
+          <input
+            type="hidden"
+            name="access_key"
+            value="584cee80-0cdc-49ab-98f8-d94d59b2c9f5"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New Submission from Web3Forms"
+          />
+          <input type="checkbox" name="botcheck" id="" style="display: none" />
 
-<div><img width="300" height="400" src="images/Zrzut ekranu 2024-01-16 120709.png" alt=""></div>
-<div><img width="300" height="400" src="images/Zrzut ekranu 2024-01-16 121032.png" alt=""></div>
-<div></div>
-<div></div>
+          <input
+            class="input-name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            class="input-email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <input
+            class="input-phone"
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <textarea
+            class="form-text"
+            id="message"
+            name="message"
+            rows="4"
+            maxlength="150"
+            placeholder="Message"
+          ></textarea>
+          <div id="message-info"></div>
 
+          <button class="form-button" type="submit">
+            <p>Submit</p>
+            <img
+              width="30"
+              height="40"
+              src="images/reshot-icon-right-arrow-UCA8NGYZDJ.svg"
+              alt=""
+            />
+          </button>
+          <div id="result"></div>
+        </form>
+      </div>
+    </section>
 
-</section>
-
-<section  id="contact" class="section5">
-  <a class="arrowUp" href="#home">
-  <img width="30" height="30" src="images/up-arrow-svgrepo-com.svg" alt="">
-  </a>
-  <h2>GET IN TOUCH</h2>
-  <div class="container">
-    
-  <form method="POST" id="form">
-     <input type="hidden" name="access_key" value="584cee80-0cdc-49ab-98f8-d94d59b2c9f5">
-    <input type="hidden" name="subject" value="New Submission from Web3Forms">
-    <input type="checkbox" name="botcheck" id="" style="display: none;">
-
-    <input class="input-name" type="text" id="name" name="name" placeholder="Your Name" required>
-<input class="input-email" type="email" id="email" name="email" placeholder="Your Email" required>
-<input class="input-phone" type="text" id="phone" name="phone" placeholder="Phone Number" required>
-<textarea class="form-text" id="message" name="message" rows="4" maxlength="150" placeholder="Message"></textarea>
-<div id="message-info"></div>
-
-
-    <button class="form-button" type="submit"> <p>Submit</p> <img  width="30" height="40" src="images/reshot-icon-right-arrow-UCA8NGYZDJ.svg" alt=""></button>
-    <div id="result"></div>
-  </form>
-  </div>
-</section>
-
-<footer>
-  
-  <div>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-  </div>
-</footer>
-
-
-
-
+    <footer>
+      <p>hi</p>
+      <div>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="translate.js"></script>
     <script src="arrow.js"></script>
     <script src="sidebar.js"></script>
     <script src="darkmode.js"></script>
     <script src="swiper.js"></script>
     <script src="submit.js"></script>
     <script src="alert.js"></script>
-  </body> 
+  </body>
 </html>
