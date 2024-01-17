@@ -177,6 +177,7 @@ label:after {
 }
 
 .moon{
+  
   position: absolute;
   z-index: 100;
   left: 31px;
@@ -623,7 +624,7 @@ filter: invert(100%);
 /* SECTION5 */
 
 .section5{
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -840,6 +841,7 @@ footer {
 }
 
 footer div {
+  padding-bottom: 20px;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -850,8 +852,8 @@ footer div {
 
 .arrowUp {
   position: fixed;
-  right: 15px;
-  bottom: 7px;
+  right: 20px;
+  bottom: 23px;
   opacity: 1; /* początkowo niewidoczna */
   transition: opacity 0.5s ease; /* płynne przejście */
 }
