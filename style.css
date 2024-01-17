@@ -16,6 +16,9 @@ body {
   animation: color 12s ease-in-out infinite;
   background-size: 300%, 300%;
   color: black;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
 }
 @keyframes color {
   0% {
@@ -446,6 +449,7 @@ form{
   justify-content: center;
   width: 100%;
   max-width: 900px;
+  margin-bottom: 50px;
 }
 
 
@@ -523,10 +527,14 @@ textarea:focus::placeholder{
   color: transparent;
 }
 
+
+
+
 .form-button p{
   margin: 0;
   font-size: 17px;
 }
+
 .form-button img {
   padding-left: 10px;
   padding-top: 0;
@@ -607,7 +615,8 @@ footer {
   justify-content: center;
   min-height: 5vh;
   position: relative;
-  width: 100%;
+  max-width: 100%;
+  margin-top: 30px;
 }
 
 footer div {
