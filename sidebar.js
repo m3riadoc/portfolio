@@ -9,3 +9,5 @@ function hideSidebar() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.classList.remove("visible");
 }
+
+
