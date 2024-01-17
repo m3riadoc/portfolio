@@ -444,7 +444,7 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   max-width: 900px;
 }
 
@@ -507,7 +507,7 @@ form{
   padding-left: 20px; 
   font-family: "Figtree", sans-serif; 
   font-weight: 300;
-  width: 300px;
+  width: 280px;
   max-width: 300px;
 }
 
