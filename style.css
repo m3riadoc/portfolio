@@ -55,6 +55,22 @@ nav li {
   height: 50px;
 }
 
+.language-section{
+ display: flex;
+ flex-direction: row;
+ padding-right: 0;
+}
+
+.language-eng  {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.language-pl{
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .underline:before {
   content: "";
   background-color: rgb(247, 149, 226);
