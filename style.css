@@ -303,6 +303,9 @@ filter: invert(100%);
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 
+.dark-mode footer{
+   background-color: #1f1f1f;
+}
 
 @keyframes color {
   0% {
@@ -884,14 +887,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 5vh;
+  min-height: 10vh;
   position: relative;
   max-width: 100%;
   margin-top: 30px;
+  
 }
 
 footer div {
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -903,7 +907,7 @@ footer div {
 .arrowUp {
   position: fixed;
   right: 20px;
-  bottom: 23px;
+  bottom: 18px;
   opacity: 1; /* początkowo niewidoczna */
   transition: opacity 0.5s ease; /* płynne przejście */
 }
