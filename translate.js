@@ -16,17 +16,22 @@ const data = {
             content: "As a young, self-taught front-end developer, I am deeply committed to crafting clear and functional websites. Passionate about learning and innovation, I strive to make the web more accessible and enjoyable for everyone.",
             useInnerHTML: false
         },
+        "cv-button": { content: "VIEW MY RESUME", useInnerHTML: false },
         "skillsText": { content: "MY SKILLS", useInnerHTML: false },
+        "liveViewText": { content: "Live View", useInnerHTML: false },
+        "codeText": { content: "Code", useInnerHTML: false },
         "inTouchText": { content: "GET IN TOUCH", useInnerHTML: false },
         "input-name": { content: "Your Name", useInnerHTML: false },
         "input-email": { content: "Your Email", useInnerHTML: false },
         "input-phone": { content: "Phone Number", useInnerHTML: false },
         "form-text": { content: "Your message", useInnerHTML: false },
+        "submitButton": { content: "Submit", useInnerHTML: false },
     },
     "polish": {
         "home": { content: "Strona główna", useInnerHTML: false },
         "about": { content: "O mnie", useInnerHTML: false },
         "portfolio": { content: "Portfolio", useInnerHTML: false },
+        "codeText": { content: "Skrypt", useInnerHTML: false },
         "contact": { content: "Kontakt", useInnerHTML: false },
         "text-about": { 
             content: `Cześć, Jestem <br />
@@ -40,12 +45,15 @@ const data = {
             content: "As a young, self-taught front-end developer, I am deeply committed to crafting clear and functional websites. Passionate about learning and innovation, I strive to make the web more accessible and enjoyable for everyone.",
             useInnerHTML: false
         },
+        "cv-button": { content: "MOJE CV", useInnerHTML: false },
         "skillsText": { content: "UMIEJĘTNOŚCI", useInnerHTML: false },
-        "inTouchText": { content: "NAPISZ DO MNIE", useInnerHTML: false },
+        "liveViewText": { content: "Podgląd", useInnerHTML: false },
+        "inTouchText": { content: "Napisz do mnie ", useInnerHTML: false },
         "input-name": { content: "Imie i nazwisko" },
         "input-email": { content: "Email", useInnerHTML: false },
         "input-phone": { content: "Numer telefonu", useInnerHTML: false },
-         "form-text": { content: "Wiadomość", useInnerHTML: false },
+        "form-text": { content: "Wiadomość", useInnerHTML: false },
+         "submitButton": { content: "Wyślij", useInnerHTML: false },
     }
     
 
