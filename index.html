@@ -37,10 +37,10 @@
                 /></svg
             ></a>
           </li>
-          <li><a href="#home" class="underline">Home</a></li>
-          <li><a href="#aboutMe" class="underline">About</a></li>
-          <li><a href="#portfolio" class="underline">Portfolio</a></li>
-          <li><a href="#contact" class="underline">Contact</a></li>
+          <li><a href="#home" class="underline home">Home</a></li>
+          <li><a href="#aboutMe" class="underline about">About</a></li>
+          <li><a href="#portfolio" class="underline portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="underline contact">Contact</a></li>
         </ul>
         <ul>
           <li>
@@ -49,8 +49,8 @@
             /></a>
           </li>
            <div class="language-section">
-              <a class="language-eng" href="">ENG/</a>
-              <a class="language-pl " href="">PL</a>
+              <a class="language-eng" language="english" href="">ENG/</a>
+              <a class="language-pl " language="polish" href="">PL</a>
             </div>
           <li>
             <a class="darkmode-switch">
@@ -69,16 +69,16 @@
            
           </li>
           <li class="hideOnMobile">
-            <a href="#home" class="underline">Home</a>
+            <a href="#home" class="underline home">Home</a>
           </li>
           <li class="hideOnMobile">
-            <a href="#aboutMe" class="underline">About</a>
+            <a href="#aboutMe" class="underline about">About</a>
           </li>
           <li class="hideOnMobile">
-            <a href="#portfolio" class="underline">Portfolio</a>
+            <a href="#portfolio" class="underline portfolio">Portfolio</a>
           </li>
           <li class="hideOnMobile">
-            <a href="#contact" class="underline">Contact</a>
+            <a href="#contact" class="underline contact">Contact</a>
           </li>
           <li class="hideOnDesktop" onclick="showSidebar()">
             <a href="" class="close-button"
@@ -99,24 +99,24 @@
 
     <section class="section1">
       <div>
-        <p>
+        <p class="text-about">
           Hello, I'm <br />
           <span class="highlight">Bartosz </span><br />Junior Front-End
           Developer
         </p>
       </div>
       <div>
-        <button><a class="contact-button" href="#contact">CONTACT ME</a></button>
+        <button><a class="contact-button contact-text" href="#contact">CONTACT ME</a></button>
       </div>
     </section>
 
     <section class="section2">
-      <h2 id="aboutMe">
+      <h2 id="aboutMe" class="aboutHeader">
         <img class="triangle" width="10" src="images/right-bottom-triangle (1).svg" alt="" />
-        ABOUT ME <img  class="triangle" width="10" src="images/right-triangle-3.svg" alt="" />
+        <span class="about-text">ABOUT ME</span> <img  class="triangle" width="10" src="images/right-triangle-3.svg" alt="" />
       </h2>
       <div class="section2-text-container">
-        <p>
+        <p class="aboutParagraph">
           As a young, self-taught front-end developer, I am deeply committed to
           crafting clear and functional websites. Passionate about learning and
           innovation, I strive to make the web more accessible and enjoyable for
@@ -130,8 +130,8 @@
 
     <section class="section3">
       <h2>
-        <img class="triangle" width="10" src="images/right-bottom-triangle (1).svg" alt="" /> MY
-        SKILLS <img class="triangle" width="10" src="images/right-triangle-3.svg" alt="" />
+        <img class="triangle" width="10" src="images/right-bottom-triangle (1).svg" alt="" /> <span class="skillsText"> MY
+        SKILLS </span> <img class="triangle" width="10" src="images/right-triangle-3.svg" alt="" />
       </h2>
 
       <div class="swiper mySwiper">
@@ -255,7 +255,7 @@
     </section>
 
     <section id="contact" class="section5">
-      <h2> <img class="triangle" width="10" src="images/right-bottom-triangle (1).svg" alt="" /> GET IN TOUCH <img class="triangle" width="10" src="images/right-triangle-3.svg" alt="" /> </h2>
+      <h2> <img class="triangle" width="10" src="images/right-bottom-triangle (1).svg" alt="" /> <span class="inTouchText">GET IN TOUCH </span> <img class="triangle" width="10" src="images/right-triangle-3.svg" alt="" /> </h2>
       <div class="container">
         <form method="POST" id="form">
           <input

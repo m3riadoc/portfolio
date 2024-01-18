@@ -32,6 +32,11 @@ body {
   }
 }
 
+
+.active{
+  color: red;
+}
+
 nav {
   display: flex;
   flex-direction: column;
