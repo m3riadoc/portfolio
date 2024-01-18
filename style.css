@@ -348,6 +348,7 @@ filter: invert(100%);
   flex-direction: row;  
 }
 
+
 .section1 button {
   height: 45px;
   width: 150px;
@@ -356,7 +357,7 @@ filter: invert(100%);
   text-decoration: none;
   cursor: pointer;
   background: linear-gradient(270deg, #dc94e2, #fdd497); 
-  color: white;
+  color: black;
   overflow: hidden;
   border-radius: 4px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
@@ -390,7 +391,9 @@ filter: invert(100%);
 
 .section1 a{
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: 790;
+ 
 }
 
 /* END OF SECTION1 */
@@ -430,15 +433,16 @@ filter: invert(100%);
    position: relative;
    border-style: none;
    text-decoration: none;
-   font-weight: 900;
    cursor: pointer;
    background: linear-gradient(270deg, #dc94e2, #fdd497); 
-   color: white;
+
    overflow: hidden;
    z-index: 1;
    border-radius: 4px;
    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
    transition:  0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+   color: black;
+  font-weight: 790;
 }
 
 .section2 button:hover {
@@ -536,6 +540,14 @@ filter: invert(100%);
     height: 400px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Cień dodający głębię */
     transition: box-shadow 0.3s ease;
+}
+
+.liveViewText{
+  color: black;
+}
+
+.codeText{
+  color: black;
 }
 
 .img-container img {
@@ -647,7 +659,7 @@ filter: invert(100%);
 .section4-button-img{
   width: 20px !important;
   height: 20px !important;
-   filter: invert(100%);
+   
 }
 
 
@@ -797,7 +809,7 @@ textarea:focus::placeholder{
   padding-left: 10px;
   padding-top: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  filter: invert(100%);
+  
 }
 
 .move-arrow {
@@ -832,10 +844,10 @@ textarea:focus::placeholder{
    position: relative;
    border-style: none;
    text-decoration: none;
-   font-weight: 900;
+   font-weight: 790;
    cursor: pointer;
    background: linear-gradient(270deg, #dc94e2, #fdd497); 
-   color: white;
+   color: black;
    overflow: hidden;
    z-index: 1;
    border-radius: 4px;
