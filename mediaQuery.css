@@ -51,7 +51,7 @@ min-height: 60vh;
 
     .section5{
         min-height: 50vh;
-        padding-top: 50px;
+      
     }
 
     
@@ -74,26 +74,28 @@ min-height: 60vh;
     margin-right: auto;
   }
  
-
-  .section4 {
-min-height: 70vh;
+  
+.section4 h2{
+  padding-bottom: 50px;
 }
 
+
+
 .section4-images {
-    padding-top: 60px;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     padding-bottom: 50px;
-    width: 1600px;
+    width: 100%;;
     
 }
 
 
 .section5{
     min-height:50vh;
-    padding-top: 30px;
+    
 }
 
   .section5 .container form {

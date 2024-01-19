@@ -419,17 +419,18 @@ filter: invert(100%);
 /* SECTION2 */
 
 .section2 {
-  min-height: 60vh;
+ 
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 20px;
+  
 }
 
 .section2 h2{
+   margin-top: 40px;
   font-size: 35px;
   color: #a842b6;
   padding-bottom: 50px;
@@ -438,7 +439,8 @@ filter: invert(100%);
 
 .section2 p{
   font-size: 20px;
- margin-top: 20px;  text-align: justify;
+ margin-top: 20px;  
+ text-align: justify;
 
 }
 
@@ -539,8 +541,7 @@ filter: invert(100%);
 
 
 .section3 {
-  padding-top:40px;
-  min-height: 25vh;
+  
   position: relative;
   display: flex;
   justify-content: center;
@@ -551,7 +552,7 @@ filter: invert(100%);
 
 .section3 h2{
   padding-bottom: 50px;
-  padding-top: 50px;
+  margin-top: 40px;
   font-size: 35px;
   
 }
@@ -561,9 +562,6 @@ filter: invert(100%);
 /* SECTION4 */
 
 .section4 {
-  padding-top: 50px;
-  min-height: 100vh;
-  
   background-color: white;
     display: flex;
     flex-direction: column;
@@ -576,6 +574,7 @@ filter: invert(100%);
 }
 
 .section4 h2{
+   margin-top: 40px;
   font-size: 35px;
   color: #a842b6;
 }
@@ -720,7 +719,7 @@ filter: invert(100%);
 /* SECTION5 */
 
 .section5{
-  min-height: 95vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -738,7 +737,7 @@ filter: invert(100%);
 
 
 .section5 h2{
-  padding-top: 20px;
+   margin-top: 40px;
   padding-bottom: 130px;
   font-size: 35px;
   color: #a842b6;
@@ -753,7 +752,7 @@ filter: invert(100%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  
 }
 
 
