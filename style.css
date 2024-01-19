@@ -931,6 +931,12 @@ textarea:focus::placeholder{
    opacity: 1;
 }
 
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /*  END OF SECTION5 */
 
