@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +42,8 @@ body {
 .dark-mode .active{
   color: #ab4eb8;
 }
+
+
 
 nav {
   display: flex;
@@ -548,6 +552,7 @@ filter: invert(100%);
 .section4 {
   padding-top: 50px;
   min-height: 100vh;
+  
   background-color: white;
     display: flex;
     flex-direction: column;
@@ -642,13 +647,14 @@ filter: invert(100%);
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   gap:5px;
   margin: 0 5px; 
   padding: 5px 10px; 
   background: linear-gradient(270deg, #dc94e2, #fdd497); 
    color: white;
    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); 
-   font-weight: 790;
+   font-weight:500;
   border: none;
   cursor: pointer;
   z-index: 3;
@@ -749,7 +755,11 @@ form{
   max-width: 900px;
   margin-bottom: 50px;
 }
-
+.section5-inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .input-name{
   height: 50px;
@@ -945,7 +955,10 @@ footer div {
 }
 
 
-
+.footer-icon:hover {
+   transform: scale(1.5);
+   transition: 0.5s ease;
+}
 
 
 /*SWIPER */
@@ -984,20 +997,6 @@ footer div {
 
 /*END OF SWIPER */
 
-/*MEDIA QUERY */
-
-@media (min-width: 1200px) {
-  .hideOnDesktop {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .hideOnMobile {
-    display: none;
-  }
-}
 
 
 
-@

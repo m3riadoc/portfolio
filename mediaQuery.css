@@ -1,0 +1,106 @@
+
+@media (min-width: 1200px) {
+  .hideOnDesktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+
+
+
+@media (min-width: 768px)  and (max-width: 1199px)  {
+
+ header {
+    max-width: 70%;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+.section4 {
+min-height: 60vh;
+}
+
+
+.section4 h2{
+    padding-bottom: 50px;
+}
+
+
+.section4-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding-bottom: 50px;
+    width: 800px;
+    
+}
+
+   .img-container {
+        flex-basis: 300px;
+        margin-bottom: 20px;
+    }
+
+
+    .section5{
+        min-height: 50vh;
+        padding-top: 50px;
+    }
+
+    
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+    header {
+    max-width: 70%;
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+
+
+
+.section5{
+    min-height:50vh;
+    padding-top: 30px;
+}
+
+  .section5 .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .section5-inputs{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+  .section5 .form-text {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px; /* Adjust for spacing */
+  }
+}
+
+
+
+
+
+}
