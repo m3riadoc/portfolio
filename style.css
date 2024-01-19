@@ -486,13 +486,14 @@ filter: invert(100%);
   opacity: 1;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  
 }
 
 .resume-lang-pack
  {
   display: flex;
   flex-direction: column;
-  height: 60px;
   width: 100px;
   padding-bottom: 20px;
   color: black;
@@ -501,9 +502,10 @@ filter: invert(100%);
   transition: opacity 0.5s ease;
 }
 
-.resume-lang-pack p {
+
+.no-decoration {
   text-decoration: none;
- 
+  color: #a842b6;
 }
 
 
