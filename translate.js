@@ -42,7 +42,7 @@ const data = {
         "contact-text": { content: "KONTAKT", useInnerHTML: false },
         "about-text": { content: "O MNIE", useInnerHTML: false },
         "aboutParagraph": {
-            content: "As a young, self-taught front-end developer, I am deeply committed to crafting clear and functional websites. Passionate about learning and innovation, I strive to make the web more accessible and enjoyable for everyone.",
+            content: "Samodzielnie uczę się, aby zostać front-end developerem. W swoich projektach skupiam się przede wszystykim na przejrzystości i funkcjonalności stron. Staram się, aby były one intuicyjne i komfortowe w użytkowaniu.",
             useInnerHTML: false
         },
         "cv-button": { content: "MOJE CV", useInnerHTML: false },
@@ -87,10 +87,10 @@ function updateLanguage(language) {
                 // Aktualizacja placeholdera dla inputów
                 element.placeholder = item.content;
             } else if (item.useInnerHTML) {
-                // Używamy innerHTML dla treści zawierających HTML
+                // innerHTML dla treści zawierających HTML
                 element.innerHTML = item.content;
             } else {
-                // Dla innych elementów aktualizujemy textContent
+                // Dla innych elementów textContent
                 element.textContent = item.content;
             }
         });
