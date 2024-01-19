@@ -925,6 +925,7 @@ footer {
   
 }
 
+
 footer div {
   padding-bottom: 5px;
   display: flex;
@@ -996,3 +997,7 @@ footer div {
     display: none;
   }
 }
+
+
+
+@
